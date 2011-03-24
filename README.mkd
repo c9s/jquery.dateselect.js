@@ -16,6 +16,7 @@ Or more...
     $(function() {
         $('#start_date').dateselect({
             valueField: $('#start_date_value'),
+            dateFormat: 'yy-mm-dd',
             change: function() {
                 // do something
             }

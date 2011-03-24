@@ -1,0 +1,24 @@
+
+DateSelect
+
+Define a div with id and default value:
+
+    <div id="start_date"><?= date('Y-m-d'); ?></div>
+
+Init dateselect:
+
+    $(function() {
+        $('#start_date').dateselect();
+    });
+
+Or more...
+
+    $(function() {
+        $('#start_date').dateselect({
+            valueField: $('#start_date_value'),
+            change: function() {
+                // do something
+            }
+        });
+    });
+
